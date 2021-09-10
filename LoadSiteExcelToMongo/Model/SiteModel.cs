@@ -20,13 +20,13 @@ namespace LoadSiteExcelToMongo.Model
         public string LoggerId { get; set; }
         public Nullable<double> StartDay { get; set; }
         public Nullable<double> StartHour { get; set; }
-        public string PipeSize { get; set; }
+        public Nullable<double> PipeSize { get; set; }
         public Nullable<double> InterVal { get; set; }
         public string Available { get; set; }
         public Nullable<double> TimeDelay { get; set; }
         public string Note { get; set; }
-
-        public string ConsumerId { get; set; }
+        
+        public Nullable<double> MNF { get; set; }
 
         public string Status { get; set; }
 

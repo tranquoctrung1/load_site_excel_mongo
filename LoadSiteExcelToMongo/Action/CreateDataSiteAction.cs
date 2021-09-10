@@ -25,14 +25,14 @@ namespace LoadSiteExcelToMongo.Action
                 el.LoggerId = item.SiteId;
                 el.StartDay = 1;
                 el.StartHour = 0;
-                el.PipeSize = "";
+                el.PipeSize = null;
                 el.InterVal = 15;
                 el.Available = "";
                 el.TimeDelay = 60;
                 el.Note = "";
-                el.ConsumerId = "";
                 el.Status = "";
                 el.IsPrimayer = false;
+                el.MNF = null;
 
                 list.Add(el);
             }

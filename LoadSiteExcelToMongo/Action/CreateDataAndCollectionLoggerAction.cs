@@ -22,8 +22,16 @@ namespace LoadSiteExcelToMongo.Action
                     string nameCollection = "t_Data_Logger_" + c.ChannelId;
                     string nameCollectionIndex = "t_Index_Logger_" + c.ChannelId;
 
-                    connect.db.CreateCollection(nameCollection);
-                    connect.db.CreateCollection(nameCollectionIndex);
+                    try
+                    {
+                        connect.db.CreateCollection(nameCollection);
+                        connect.db.CreateCollection(nameCollectionIndex);
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    
                 }
             }
         }
